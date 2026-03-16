@@ -1,0 +1,259 @@
+@page "{id:int}"
+@model TourOperatorWeb.Pages.Admin.Tour_SuaModel
+@attribute [Microsoft.AspNetCore.Authorization.Authorize(Roles = "QuanTriHeThong")]
+@{
+    Layout = "_ModalLayout"; // Form hiển thị trong modal, dùng layout riêng không có header/footer
+    ViewData["Title"] = "Sửa tour";
+}
+
+<div class="container py-4 crud-form-shell">
+    <div class="crud-form-card">
+        <h1 class="mb-3">Sửa thông tin tour du lịch</h1>
+        <form method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+        <input type="hidden" asp-for="Tour.Id" />
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label asp-for="Tour.TenTour" class="form-label">Tên tour <span class="text-danger">*</span></label>
+                <input asp-for="Tour.TenTour" class="form-control" />
+                <span asp-validation-for="Tour.TenTour" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="Tour.DiaDiemKhoiHanh" class="form-label">Khởi hành <span class="text-danger">*</span></label>
+                <input asp-for="Tour.DiaDiemKhoiHanh" class="form-control" />
+                <span asp-validation-for="Tour.DiaDiemKhoiHanh" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="Tour.SoNgay" class="form-label">Số ngày <span class="text-danger">*</span></label>
+                <input asp-for="Tour.SoNgay" class="form-control" type="number" min="1" id="soNgayInputSua" />
+                <span asp-validation-for="Tour.SoNgay" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="Tour.DiaDiemDen" class="form-label">Điểm đến cuối <span class="text-danger">*</span></label>
+                <input asp-for="Tour.DiaDiemDen" class="form-control" />
+                <span asp-validation-for="Tour.DiaDiemDen" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="Tour.GiaTu" class="form-label">Giá từ (đ) <span class="text-danger">*</span></label>
+                <input asp-for="Tour.GiaTu" class="form-control" type="number" step="1000" min="0" />
+                <span asp-validation-for="Tour.GiaTu" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Ảnh đại diện hiện tại</label>
+                @if (!string.IsNullOrWhiteSpace(Model.Tour.AnhDaiDien))
+                {
+                    <div class="mb-2">
+                        <img src="@Model.Tour.AnhDaiDien" alt="Ảnh tour" class="img-thumbnail" style="max-height: 200px;" />
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted small">Chưa có ảnh đại diện cho tour này.</p>
+                }
+
+                <label class="form-label mt-2">Tải ảnh đại diện mới (tùy chọn)</label>
+                <input type="file" name="AnhDaiDienFile" class="form-control" accept="image/*" />
+                <input type="hidden" asp-for="Tour.AnhDaiDien" />
+            </div>
+            <div class="col-12">
+                <label asp-for="Tour.MoTaNgan" class="form-label">Mô tả ngắn</label>
+                <textarea asp-for="Tour.MoTaNgan" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="col-12 form-check">
+                <input asp-for="Tour.LaDeXuat" class="form-check-input" />
+                <label asp-for="Tour.LaDeXuat" class="form-check-label">Đánh dấu là tour đề xuất trên trang chủ</label>
+            </div>
+
+            <div class="col-12 mt-4">
+                <h5>Điểm đến & hoạt động theo từng ngày</h5>
+                <p class="text-muted small mb-2">
+                    Điều chỉnh điểm đến trong ngày và hoạt động chính cho từng ngày của tour.
+                </p>
+                <span asp-validation-for="LichTrinhs" class="text-danger"></span>
+                <div id="lichTrinhContainerSua"></div>
+            </div>
+
+            <div class="col-12 mt-4">
+                <h5>Lịch khởi hành (ngày, giờ, phương tiện)</h5>
+                <p class="text-muted small mb-2">
+                    Cập nhật các lịch khởi hành cho tour này.
+                </p>
+                <span asp-validation-for="LichKhoiHanhs" class="text-danger"></span>
+                <div id="lichKhoiHanhContainerSua" class="mb-2"></div>
+                <button type="button" class="btn btn-sm btn-outline-primary" id="btnThemLichKhoiHanhSua">+ Thêm lịch khởi hành</button>
+            </div>
+        </div>
+        <div class="mt-4 crud-form-actions">
+            <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+            <a asp-page="/Admin/QuanLyTour" class="btn btn-outline-secondary">Hủy</a>
+        </div>
+        </form>
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+        <script>
+            (function () {
+                const soNgayInput = document.getElementById('soNgayInputSua');
+                const lichTrinhContainer = document.getElementById('lichTrinhContainerSua');
+                const lichKhoiHanhContainer = document.getElementById('lichKhoiHanhContainerSua');
+                const btnThemLichKhoiHanh = document.getElementById('btnThemLichKhoiHanhSua');
+
+                if (!soNgayInput || !lichTrinhContainer) {
+                    return;
+                }
+
+                // Dữ liệu lịch trình và lịch khởi hành hiện tại được render từ server dưới dạng JSON
+                const lichTrinhsData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.LichTrinhs));
+                const lichKhoiHanhsData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.LichKhoiHanhs));
+
+                function renderLichTrinh() {
+                    lichTrinhContainer.innerHTML = '';
+                    const soNgay = parseInt(soNgayInput.value || '0');
+                    if (!soNgay || soNgay <= 0) {
+                        return;
+                    }
+
+                    for (let i = 0; i < soNgay; i++) {
+                        const ngayThu = i + 1;
+                        const existing = lichTrinhsData.find(x => x.NgayThu === ngayThu) || {};
+
+                        const row = document.createElement('div');
+                        row.className = 'row g-2 align-items-start mb-2';
+
+                        const colNgay = document.createElement('div');
+                        colNgay.className = 'col-md-2';
+                        const labelNgay = document.createElement('label');
+                        labelNgay.className = 'form-label';
+                        labelNgay.textContent = 'Ngày ' + ngayThu;
+                        const inputNgay = document.createElement('input');
+                        inputNgay.type = 'number';
+                        inputNgay.className = 'form-control';
+                        inputNgay.readOnly = true;
+                        inputNgay.value = ngayThu;
+                        inputNgay.name = `LichTrinhs[${i}].NgayThu`;
+                        colNgay.appendChild(labelNgay);
+                        colNgay.appendChild(inputNgay);
+
+                        const colDiemDen = document.createElement('div');
+                        colDiemDen.className = 'col-md-4';
+                        const labelDiemDen = document.createElement('label');
+                        labelDiemDen.className = 'form-label';
+                        labelDiemDen.textContent = 'Điểm đến ngày ' + ngayThu;
+                        const inputDiemDen = document.createElement('input');
+                        inputDiemDen.type = 'text';
+                        inputDiemDen.className = 'form-control';
+                        inputDiemDen.name = `LichTrinhs[${i}].DiemDen`;
+                        if (existing.DiemDen) inputDiemDen.value = existing.DiemDen;
+                        colDiemDen.appendChild(labelDiemDen);
+                        colDiemDen.appendChild(inputDiemDen);
+
+                        const colHoatDong = document.createElement('div');
+                        colHoatDong.className = 'col-md-6';
+                        const labelHoatDong = document.createElement('label');
+                        labelHoatDong.className = 'form-label';
+                        labelHoatDong.textContent = 'Hoạt động chính ngày ' + ngayThu;
+                        const textareaHoatDong = document.createElement('textarea');
+                        textareaHoatDong.className = 'form-control';
+                        textareaHoatDong.rows = 2;
+                        textareaHoatDong.name = `LichTrinhs[${i}].HoatDong`;
+                        if (existing.HoatDong) textareaHoatDong.value = existing.HoatDong;
+                        colHoatDong.appendChild(labelHoatDong);
+                        colHoatDong.appendChild(textareaHoatDong);
+
+                        row.appendChild(colNgay);
+                        row.appendChild(colDiemDen);
+                        row.appendChild(colHoatDong);
+                        lichTrinhContainer.appendChild(row);
+                    }
+                }
+
+                function toLocalDateTimeValue(dtString) {
+                    if (!dtString) return '';
+                    const dt = new Date(dtString);
+                    if (Number.isNaN(dt.getTime())) return '';
+                    const pad = (n) => n.toString().padStart(2, '0');
+                    return `${dt.getFullYear()}-${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}T${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
+                }
+
+                let lichKhoiHanhIndex = 0;
+
+                function renderLichKhoiHanhBanDau() {
+                    lichKhoiHanhContainer.innerHTML = '';
+                    lichKhoiHanhIndex = 0;
+                    if (Array.isArray(lichKhoiHanhsData) && lichKhoiHanhsData.length > 0) {
+                        lichKhoiHanhsData.forEach(function (item) {
+                            themDongLichKhoiHanh(toLocalDateTimeValue(item.ThoiGianKhoiHanh), item.PhuongTien);
+                        });
+                    } else {
+                        themDongLichKhoiHanh('', '');
+                    }
+                }
+
+                function themDongLichKhoiHanh(valueDateTime, valuePhuongTien) {
+                    if (!lichKhoiHanhContainer) return;
+
+                    const row = document.createElement('div');
+                    row.className = 'row g-2 align-items-end mb-2';
+
+                    const colDateTime = document.createElement('div');
+                    colDateTime.className = 'col-md-6';
+                    const labelDateTime = document.createElement('label');
+                    labelDateTime.className = 'form-label';
+                    labelDateTime.textContent = 'Ngày & giờ khởi hành';
+                    const inputDateTime = document.createElement('input');
+                    inputDateTime.type = 'datetime-local';
+                    inputDateTime.className = 'form-control';
+                    inputDateTime.name = `LichKhoiHanhs[${lichKhoiHanhIndex}].ThoiGianKhoiHanh`;
+                    if (valueDateTime) inputDateTime.value = valueDateTime;
+                    colDateTime.appendChild(labelDateTime);
+                    colDateTime.appendChild(inputDateTime);
+
+                    const colPhuongTien = document.createElement('div');
+                    colPhuongTien.className = 'col-md-5';
+                    const labelPhuongTien = document.createElement('label');
+                    labelPhuongTien.className = 'form-label';
+                    labelPhuongTien.textContent = 'Phương tiện vận chuyển';
+                    const inputPhuongTien = document.createElement('input');
+                    inputPhuongTien.type = 'text';
+                    inputPhuongTien.className = 'form-control';
+                    inputPhuongTien.placeholder = 'Ví dụ: Máy bay + Xe du lịch';
+                    inputPhuongTien.name = `LichKhoiHanhs[${lichKhoiHanhIndex}].PhuongTien`;
+                    if (valuePhuongTien) inputPhuongTien.value = valuePhuongTien;
+                    colPhuongTien.appendChild(labelPhuongTien);
+                    colPhuongTien.appendChild(inputPhuongTien);
+
+                    const colRemove = document.createElement('div');
+                    colRemove.className = 'col-md-1 text-end';
+                    const btnRemove = document.createElement('button');
+                    btnRemove.type = 'button';
+                    btnRemove.className = 'btn btn-outline-danger btn-sm';
+                    btnRemove.textContent = 'Xóa';
+                    btnRemove.addEventListener('click', function () {
+                        row.remove();
+                    });
+                    colRemove.appendChild(btnRemove);
+
+                    row.appendChild(colDateTime);
+                    row.appendChild(colPhuongTien);
+                    row.appendChild(colRemove);
+
+                    lichKhoiHanhContainer.appendChild(row);
+                    lichKhoiHanhIndex++;
+                }
+
+                soNgayInput.addEventListener('change', renderLichTrinh);
+                soNgayInput.addEventListener('keyup', renderLichTrinh);
+
+                if (btnThemLichKhoiHanh) {
+                    btnThemLichKhoiHanh.addEventListener('click', function () {
+                        themDongLichKhoiHanh('', '');
+                    });
+                }
+
+                renderLichTrinh();
+                renderLichKhoiHanhBanDau();
+            })();
+        </script>
+    }
+</div>

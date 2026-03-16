@@ -1,0 +1,44 @@
+@page
+@model TourOperatorWeb.Pages.Admin.BaoCaoLoiNhuanTourModel
+@attribute [Microsoft.AspNetCore.Authorization.Authorize(Roles = "QuanTriHeThong")]
+@{
+    ViewData["Title"] = "Báo cáo lãi/lỗ tour";
+}
+
+<div class="container py-4">
+    <h1 class="mb-3">Báo cáo lãi/lỗ từng tour du lịch</h1>
+    <p class="text-muted mb-4">
+        Tổng thu (khách trả) - Tổng chi (trả đối tác) = Lợi nhuận ròng cho từng tour.
+    </p>
+
+    <table class="table table-striped table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Tên tour</th>
+                <th class="text-end">Tổng thu khách trả</th>
+                <th class="text-end">Tổng chi trả đối tác</th>
+                <th class="text-end">Lợi nhuận ròng</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.DanhSachBaoCao)
+        {
+            <tr>
+                <td>@item.TenTour</td>
+                <td class="text-end">@item.TongThu.ToString("N0") đ</td>
+                <td class="text-end">@item.TongChi.ToString("N0") đ</td>
+                <td class="text-end">
+                    @if (item.LoiNhuanRong >= 0)
+                    {
+                        <span class="text-success fw-semibold">@item.LoiNhuanRong.ToString("N0") đ</span>
+                    }
+                    else
+                    {
+                        <span class="text-danger fw-semibold">@item.LoiNhuanRong.ToString("N0") đ</span>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

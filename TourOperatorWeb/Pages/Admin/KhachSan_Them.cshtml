@@ -1,0 +1,44 @@
+@page
+@model TourOperatorWeb.Pages.Admin.KhachSan_ThemModel
+@attribute [Microsoft.AspNetCore.Authorization.Authorize(Roles = "QuanTriHeThong")]
+@{
+    Layout = "_ModalLayout"; // Form hiển thị trong modal, dùng layout riêng không có header/footer
+    ViewData["Title"] = "Thêm khách sạn";
+}
+
+<div class="container py-4 crud-form-shell">
+    <div class="crud-form-card">
+        <h2 class="mb-3">Thêm khách sạn</h2>
+
+        <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="mb-3">
+            <label asp-for="KhachSan.TenKhachSan" class="form-label">Tên khách sạn *</label>
+            <input asp-for="KhachSan.TenKhachSan" class="form-control" />
+            <span asp-validation-for="KhachSan.TenKhachSan" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="KhachSan.DiaChi" class="form-label">Địa chỉ</label>
+            <input asp-for="KhachSan.DiaChi" class="form-control" />
+            <span asp-validation-for="KhachSan.DiaChi" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="KhachSan.SoDienThoai" class="form-label">Số điện thoại</label>
+            <input asp-for="KhachSan.SoDienThoai" class="form-control" />
+            <span asp-validation-for="KhachSan.SoDienThoai" class="text-danger"></span>
+        </div>
+
+        <div class="crud-form-actions mt-4">
+            <button type="submit" class="btn btn-primary">Lưu</button>
+            <a asp-page="/Admin/QuanLyKhachSan" class="btn btn-secondary ms-2">Quay lại</a>
+        </div>
+        </form>
+
+        @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+        }
+    </div>
+</div>

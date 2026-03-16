@@ -1,0 +1,256 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<div class="container py-5">
+    <!-- 1. Thanh tìm kiếm trung tâm (Hero Search Bar) -->
+    <div class="hero-search-section mb-5">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-5">
+                <h1 class="h3 hero-search-heading mb-2">Tìm tour phù hợp cho chuyến đi của bạn</h1>
+                <p class="hero-search-subtitle mb-3">
+                    Chọn điểm đến, ngày khởi hành và số lượng khách, VietTour giúp bạn gợi ý những hành trình phù hợp nhất.
+                </p>
+                <ul class="list-unstyled small mb-0">
+                    <li><i class="bi bi-check-circle-fill me-1"></i> Tour đoàn, tour lẻ, tour trọn gói</li>
+                    <li><i class="bi bi-check-circle-fill me-1"></i> Hỗ trợ thiết kế tour riêng theo yêu cầu</li>
+                </ul>
+            </div>
+            <div class="col-lg-7">
+                <div class="hero-search-card">
+                    <form class="hero-search-form">
+                        <div class="row g-3 align-items-end">
+                            <div class="col-md-4">
+                                <div class="mb-1 hero-search-form-label">Điểm đến</div>
+                                <input type="text" class="form-control" placeholder="Đà Nẵng, Đà Lạt, Phú Quốc..." />
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-1 hero-search-form-label">Ngày khởi hành</div>
+                                <input type="date" class="form-control" />
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-1 hero-search-form-label">Người lớn</div>
+                                <select class="form-select">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4+</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="mb-1 hero-search-form-label">Trẻ em</div>
+                                <select class="form-select">
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3+</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 mt-3 mt-md-0">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="bi bi-search me-1"></i> Tìm tour
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Khối Tour nổi bật & khuyến mãi -->
+    <div class="mb-5">
+        <div class="d-flex justify-content-between align-items-end mb-2">
+            <div>
+                <div class="home-section-title">Tour nổi bật & khuyến mãi</div>
+                <h2 class="home-section-heading h4 mb-0">Gợi ý hành trình trọn gói cho bạn</h2>
+            </div>
+        </div>
+        <p class="home-section-subtitle mb-3">
+            Những chương trình tour được VietTour lựa chọn kỹ, phù hợp cho gia đình, công ty và nhóm bạn.
+        </p>
+
+        @if (!Model.DanhSachTourDeXuat.Any())
+        {
+            <div class="alert alert-light border-0 shadow-sm small">
+                Hiện chưa có tour nào được đánh dấu đề cử.
+            </div>
+        }
+        else
+        {
+            <div class="row g-4">
+                @foreach (var tour in Model.DanhSachTourDeXuat)
+                {
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a asp-page="/Tour/ChiTiet" asp-route-id="@tour.Id" class="text-decoration-none text-reset">
+                            <div class="card h-100 featured-tour-card position-relative">
+                                @if (!string.IsNullOrWhiteSpace(tour.AnhDaiDien))
+                                {
+                                    <img src="@tour.AnhDaiDien" alt="Ảnh tour @tour.TenTour" class="card-img-top" style="height: 200px; object-fit: cover;" />
+                                }
+                                <span class="badge-sale">Hot</span>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title mb-1">@tour.TenTour</h5>
+                                <p class="card-text text-muted small mb-1">
+                                    <i class="bi bi-clock me-1"></i>@tour.SoNgay ngày
+                                </p>
+                                <p class="card-text text-muted small mb-1">
+                                    <i class="bi bi-geo-alt me-1"></i>@tour.DiaDiemKhoiHanh → @tour.DiaDiemDen
+                                </p>
+                                <p class="card-text text-muted small mb-2">
+                                    <strong>Giá từ:</strong> <span class="fw-bold text-danger">@tour.GiaTu.ToString("N0") đ</span>
+                                </p>
+
+                                @if (!string.IsNullOrWhiteSpace(tour.MoTaNgan))
+                                {
+                                    <p class="card-text small text-secondary flex-grow-1">@tour.MoTaNgan</p>
+                                }
+                                else
+                                {
+                                    <p class="card-text small text-secondary flex-grow-1">Tour trọn gói với lịch trình linh hoạt, phù hợp cho nhiều nhóm khách.</p>
+                                }
+
+                                <div class="mt-3 d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" disabled>
+                                        Xem chi tiết
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-primary" disabled>
+                                        Đặt ngay
+                                    </button>
+                                </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    <!-- 3 & 4. Yêu cầu tự thiết kế tour + Dịch vụ đặt xe riêng -->
+    <div class="row g-4 mb-5">
+        <div class="col-lg-7">
+            <div class="custom-tour-section h-100">
+                <div class="home-section-title mb-1">Yêu cầu tự thiết kế tour</div>
+                <h3 class="h5 mb-2">Thiết kế riêng hành trình cho công ty / trường học</h3>
+                <p class="small text-secondary mb-3">
+                    Mô tả nhanh nhu cầu của bạn, bộ phận Sales & Điều hành VietTour sẽ liên hệ tư vấn và ghép dịch vụ theo ngân sách.
+                </p>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Loại xe mong muốn</label>
+                        <select class="form-select form-select-sm">
+                            <option>16 chỗ</option>
+                            <option>29 chỗ</option>
+                            <option>45 chỗ</option>
+                            <option>Nhiều xe nhỏ (gia đình)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Tiêu chuẩn khách sạn</label>
+                        <select class="form-select form-select-sm">
+                            <option>2 sao</option>
+                            <option>3 sao</option>
+                            <option>4 sao</option>
+                            <option>5 sao</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Ngân sách dự kiến / khách</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="VD: 3.000.000 đ" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Quy mô đoàn</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="VD: 40 người, 2 lớp..." />
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Ghi chú thêm</label>
+                        <textarea class="form-control form-control-sm" rows="2" placeholder="Địa điểm mong muốn, thời gian dự kiến, yêu cầu đặc biệt..."></textarea>
+                    </div>
+                </div>
+                <div class="mt-3 d-flex justify-content-end">
+                    <button type="button" class="btn btn-sm btn-primary">
+                        Gửi yêu cầu tư vấn
+                    </button>
+                </div>
+                <p class="small text-muted mt-2 mb-0">
+                    Yêu cầu của bạn sẽ được chuyển thẳng đến bộ phận Sales & Điều hành để xử lý.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="car-rental-section h-100">
+                <div class="home-section-title mb-1">Dịch vụ đặt xe riêng</div>
+                <h3 class="h5 mb-2">Thuê xe du lịch kèm tài xế</h3>
+                <p class="small text-secondary mb-3">
+                    Phù hợp cho khách chỉ cần phương tiện di chuyển: công tác, đón tiễn sân bay, tham quan trong ngày.
+                </p>
+                <ul class="custom-tour-pills list-inline small mb-3">
+                    <li class="list-inline-item mb-1"><span class="badge bg-white text-slate-700 border">Xe 4–7 chỗ</span></li>
+                    <li class="list-inline-item mb-1"><span class="badge bg-white text-slate-700 border">Xe 16 chỗ</span></li>
+                    <li class="list-inline-item mb-1"><span class="badge bg-white text-slate-700 border">Xe 29–45 chỗ</span></li>
+                </ul>
+                <p class="small text-secondary mb-3">
+                    Hãy liên hệ hotline hoặc gửi yêu cầu, VietTour sẽ báo giá nhanh theo tuyến đường và thời gian di chuyển.
+                </p>
+                <button type="button" class="btn btn-sm btn-outline-primary">
+                    Yêu cầu báo giá thuê xe
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Điểm đến yêu thích (Top Destinations) -->
+    <div class="mb-3">
+        <div class="d-flex justify-content-between align-items-end mb-2">
+            <div>
+                <div class="home-section-title">Điểm đến yêu thích</div>
+                <h2 class="home-section-heading h4 mb-0">Gợi ý địa điểm đang hot</h2>
+            </div>
+        </div>
+        <p class="home-section-subtitle mb-3">
+            Một vài điểm đến được nhiều khách hàng VietTour lựa chọn trong thời gian gần đây.
+        </p>
+
+        <div class="row g-3 top-destinations-grid">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="destination-card">
+                    <img src="https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Đà Nẵng" />
+                    <div class="destination-info">
+                        <div class="destination-name">Đà Nẵng</div>
+                        <div class="destination-meta">Biển Mỹ Khê, Bà Nà Hills, Hội An lân cận</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="destination-card">
+                    <img src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Đà Lạt" />
+                    <div class="destination-info">
+                        <div class="destination-name">Đà Lạt</div>
+                        <div class="destination-meta">Khí hậu mát mẻ, phù hợp nghỉ dưỡng cuối tuần</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="destination-card">
+                    <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Phú Quốc" />
+                    <div class="destination-info">
+                        <div class="destination-name">Phú Quốc</div>
+                        <div class="destination-meta">Biển xanh, resort cao cấp, phù hợp team building</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="destination-card">
+                    <img src="https://images.pexels.com/photos/460680/pexels-photo-460680.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sa Pa" />
+                    <div class="destination-info">
+                        <div class="destination-name">Sa Pa</div>
+                        <div class="destination-meta">Núi rừng Tây Bắc, trải nghiệm văn hóa bản địa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

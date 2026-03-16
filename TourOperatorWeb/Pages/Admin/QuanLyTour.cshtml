@@ -1,0 +1,103 @@
+@page
+@model TourOperatorWeb.Pages.Admin.QuanLyTourModel
+@attribute [Microsoft.AspNetCore.Authorization.Authorize(Roles = "QuanTriHeThong")]
+@{
+    ViewData["Title"] = "Quản lý tour du lịch";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h1 class="mb-1">Quản lý tour du lịch</h1>
+            <p class="text-muted mb-0">Danh sách tour du lịch đang được kinh doanh trong hệ thống.</p>
+        </div>
+        <div>
+            <a href="#" class="btn btn-primary js-open-tour-modal" data-url="/Admin/Tour_Them">+ Thêm tour mới</a>
+        </div>
+    </div>
+
+    <table class="table table-striped table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Tên tour</th>
+                <th>Khởi hành</th>
+                <th>Điểm đến</th>
+                <th>Thời gian</th>
+                <th>Giá từ</th>
+                <th>Đề xuất</th>
+                <th style="width: 150px;">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var tour in Model.DanhSachTour)
+        {
+            <tr>
+                <td>@tour.TenTour</td>
+                <td>@tour.DiaDiemKhoiHanh</td>
+                <td>@tour.DiaDiemDen</td>
+                <td>@tour.SoNgay ngày</td>
+                <td>@tour.GiaTu.ToString("N0") đ</td>
+                <td>
+                    @if (tour.LaDeXuat)
+                    {
+                        <span class="badge bg-success">Đề xuất</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Thường</span>
+                    }
+                </td>
+                <td>
+                    <div class="btn-group btn-group-sm" role="group">
+                        <a href="#" class="btn btn-outline-secondary js-open-tour-modal" data-url="@Url.Page("/Admin/Tour_Sua", new { id = tour.Id })">Sửa</a>
+                        <a href="#" class="btn btn-outline-danger js-open-tour-modal" data-url="@Url.Page("/Admin/Tour_Xoa", new { id = tour.Id })">Xóa</a>
+                    </div>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    
+    <!-- Modal hiển thị form Thêm/Sửa/Xóa tour ngay trên trang danh sách -->
+    <div class="modal fade" id="tourModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chi tiết tour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <iframe id="tourModalFrame" src="" style="border:0; width:100%; height:600px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <script>
+            (function () {
+                const modalElement = document.getElementById('tourModal');
+                const frame = document.getElementById('tourModalFrame');
+                if (!modalElement || !frame || !window.bootstrap) {
+                    return;
+                }
+
+                const modal = new bootstrap.Modal(modalElement);
+
+                document.querySelectorAll('.js-open-tour-modal').forEach(function (btn) {
+                    btn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const url = this.getAttribute('data-url');
+                        if (!url) return;
+                        frame.src = url;
+                        modal.show();
+                    });
+                });
+
+                modalElement.addEventListener('hidden.bs.modal', function () {
+                    frame.src = '';
+                });
+            })();
+        </script>
+    }
+</div>

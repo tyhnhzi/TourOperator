@@ -1,0 +1,86 @@
+@page
+@model TourOperatorWeb.Pages.Admin.QuanLyTaiKhoanModel
+@attribute [Microsoft.AspNetCore.Authorization.Authorize(Roles = "QuanTriHeThong")]
+@{
+    ViewData["Title"] = "Quản lý tài khoản";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h1 class="mb-1">Quản lý tài khoản người dùng</h1>
+            <p class="text-muted mb-0">Danh sách tài khoản đang có trong hệ thống.</p>
+        </div>
+        <div>
+            <a href="#" class="btn btn-primary js-open-account-modal" data-url="/Admin/TaiKhoan_Them">+ Thêm tài khoản</a>
+        </div>
+    </div>
+
+    <table class="table table-striped table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Tên đăng nhập</th>
+                <th>Vai trò</th>
+                <th style="width: 160px;">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var nguoiDung in Model.DanhSachNguoiDung)
+        {
+            <tr>
+                <td>@nguoiDung.TenDangNhap</td>
+                <td>@nguoiDung.TenVaiTro</td>
+                <td>
+                    <div class="btn-group btn-group-sm" role="group">
+                        <a href="#" class="btn btn-outline-secondary js-open-account-modal" data-url="@Url.Page("/Admin/TaiKhoan_Sua", new { id = nguoiDung.Id })">Sửa</a>
+                        <a href="#" class="btn btn-outline-danger js-open-account-modal" data-url="@Url.Page("/Admin/TaiKhoan_Xoa", new { id = nguoiDung.Id })">Xóa</a>
+                    </div>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    
+    <!-- Modal hiển thị form Thêm/Sửa/Xóa tài khoản ngay trên trang danh sách -->
+    <div class="modal fade" id="accountModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chi tiết tài khoản</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <iframe id="accountModalFrame" src="" style="border:0; width:100%; height:500px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <script>
+            (function () {
+                const modalElement = document.getElementById('accountModal');
+                const frame = document.getElementById('accountModalFrame');
+                if (!modalElement || !frame || !window.bootstrap) {
+                    return;
+                }
+
+                const modal = new bootstrap.Modal(modalElement);
+
+                document.querySelectorAll('.js-open-account-modal').forEach(function (btn) {
+                    btn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const url = this.getAttribute('data-url');
+                        if (!url) return;
+                        frame.src = url;
+                        modal.show();
+                    });
+                });
+
+                modalElement.addEventListener('hidden.bs.modal', function () {
+                    frame.src = '';
+                });
+            })();
+        </script>
+    }
+</div>

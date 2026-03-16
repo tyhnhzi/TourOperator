@@ -1,0 +1,74 @@
+@page
+@model TourOperatorWeb.Pages.Admin.TrangChuAdminModel
+@attribute [Microsoft.AspNetCore.Authorization.Authorize(Roles = "QuanTriHeThong")]
+@{
+    ViewData["Title"] = "Trang chủ quản trị";
+}
+
+<div class="container py-4">
+    <h1 class="mb-4">Trang chủ quản trị hệ thống</h1>
+
+    <div class="alert alert-info shadow-sm border-0 rounded-3 bg-opacity-75">
+        Chào mừng <strong>@User.Identity?.Name</strong> đến với khu vực quản trị.
+        Tại đây bạn có thể quản lý dữ liệu tour du lịch và tài khoản người dùng.
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100 admin-card-hover">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Quản lý tour du lịch</h5>
+                    <p class="card-text flex-grow-1">
+                        Xem, thêm mới và chỉnh sửa thông tin các tour du lịch đang kinh doanh.
+                    </p>
+                    <a asp-page="/Admin/QuanLyTour" class="btn btn-primary mt-2">Đi tới quản lý tour</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100 admin-card-hover">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Quản lý tài khoản người dùng</h5>
+                    <p class="card-text flex-grow-1">
+                        Xem danh sách tài khoản, phân quyền vai trò cho quản trị và khách hàng.
+                    </p>
+                    <a asp-page="/Admin/QuanLyTaiKhoan" class="btn btn-secondary mt-2">Đi tới quản lý tài khoản</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100 admin-card-hover">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Báo cáo lãi/lỗ tour</h5>
+                    <p class="card-text flex-grow-1">
+                        Xem tổng thu từ khách, tổng chi trả đối tác và lợi nhuận ròng của từng tour du lịch.
+                    </p>
+                    <a asp-page="/Admin/BaoCaoLoiNhuanTour" class="btn btn-outline-primary mt-2">Xem báo cáo lãi/lỗ</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100 admin-card-hover">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Quản lý khách sạn</h5>
+                    <p class="card-text flex-grow-1">
+                        Quản lý danh sách khách sạn liên kết, dùng cho việc ghép dịch vụ tour.
+                    </p>
+                    <a asp-page="/Admin/QuanLyKhachSan" class="btn btn-outline-secondary mt-2">Đi tới quản lý khách sạn</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100 admin-card-hover">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Quản lý xe</h5>
+                    <p class="card-text flex-grow-1">
+                        Quản lý phương tiện, đội xe phục vụ cho các tour du lịch.
+                    </p>
+                    <a asp-page="/Admin/QuanLyXe" class="btn btn-outline-secondary mt-2">Đi tới quản lý xe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

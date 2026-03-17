@@ -1,1 +1,1 @@
-web: cd TourOperatorWeb/bin/publish; ./TourOperator --urls http://*:$PORT
+web: cd TourOperatorWeb/bin/publish; ./TourOperatorWeb --urls http://*:$PORT

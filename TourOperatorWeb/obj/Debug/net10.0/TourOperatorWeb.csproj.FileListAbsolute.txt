@@ -1,0 +1,423 @@
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\appsettings.Development.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\appsettings.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.staticwebassets.runtime.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.staticwebassets.endpoints.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.exe
+C:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.deps.json
+C:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.runtimeconfig.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.pdb
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Humanizer.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.Build.Locator.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Mono.TextTemplating.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\System.CodeDom.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\System.Composition.Convention.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\System.Composition.Hosting.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\System.Composition.Runtime.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\System.Composition.TypedParts.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.csproj.AssemblyReference.cache
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\rpswa.dswa.cache.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.AssemblyInfoInputs.cache
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.AssemblyInfo.cs
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.csproj.CoreCompileInputs.cache
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.RazorAssemblyInfo.cache
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.RazorAssemblyInfo.cs
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\rjimswa.dswa.cache.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\scopedcss\bundle\TourOperatorWeb.styles.css
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\scopedcss\projectbundle\TourOperatorWeb.bundle.scp.css
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\g3svoafy3v-{0}-61n19gt1b8-61n19gt1b8.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\9grurhrju4-{0}-bqjiyaj88i-bqjiyaj88i.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\tk3dehodsb-{0}-c2jlpeoesf-c2jlpeoesf.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\pkwqyzeioa-{0}-erw9l3u2r3-erw9l3u2r3.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\hdmcclgcei-{0}-aexeepp0ev-aexeepp0ev.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\o7auwhl2ad-{0}-d7shbmvgxk-d7shbmvgxk.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\3iqs7bxibm-{0}-ausgxo2sd3-ausgxo2sd3.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\k00jpfhdx8-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\s8b2h09wwx-{0}-cosvhxvwiu-cosvhxvwiu.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\ordu4usojj-{0}-ub07r2b239-ub07r2b239.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\bulfk3g8z1-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\17noghae6q-{0}-b7pk76d08c-b7pk76d08c.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\8jil6q4xsb-{0}-fsbi9cje9m-fsbi9cje9m.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\k0rmnga10c-{0}-rzd6atqjts-rzd6atqjts.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\70507x4ns5-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\ytn8u7apmn-{0}-dxx9fxp4il-dxx9fxp4il.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\beh78vced9-{0}-jd9uben2k1-jd9uben2k1.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\11rvqzztre-{0}-khv3u5hwcm-khv3u5hwcm.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\69bpw5dwzs-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\xn6z1a6dem-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\fu6kxkhlvo-{0}-c2oey78nd0-c2oey78nd0.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\5ae110eiyj-{0}-tdbxkamptv-tdbxkamptv.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\sedxfjq02y-{0}-j5mq2jizvt-j5mq2jizvt.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\3qdgzn5yj4-{0}-06098lyss8-06098lyss8.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\1kndqaohok-{0}-nvvlpmu67g-nvvlpmu67g.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\w9o86x6fcj-{0}-s35ty4nyc5-s35ty4nyc5.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\1fefrn41xs-{0}-pj5nd1wqec-pj5nd1wqec.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\tu8ge1wwlw-{0}-46ein0sx1k-46ein0sx1k.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\qsio25pt1j-{0}-v0zj4ognzu-v0zj4ognzu.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\coizkiiki2-{0}-37tfw0ft22-37tfw0ft22.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\1n10am6a3p-{0}-hrwsygsryq-hrwsygsryq.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\h6ojlvjjj9-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\hqmydcdryd-{0}-ft3s53vfgj-ft3s53vfgj.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\aygd1cdqwa-{0}-6cfz1n2cew-6cfz1n2cew.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\vdc065d227-{0}-6pdc2jztkx-6pdc2jztkx.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\euog3ocqdf-{0}-493y06b0oq-493y06b0oq.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\gf892sljmd-{0}-iovd86k7lj-iovd86k7lj.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\w7duvrzvnq-{0}-vr1egmr9el-vr1egmr9el.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\sbjwynn5jc-{0}-kbrnm935zg-kbrnm935zg.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\107olorqbx-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\b47djlimqm-{0}-y7v9cxd14o-y7v9cxd14o.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\xqonidcpvs-{0}-notf2xhcfb-notf2xhcfb.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\7ojxfikqtk-{0}-h1s4sie4z3-h1s4sie4z3.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\e9bm0spfl0-{0}-63fj8s7r0e-63fj8s7r0e.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\biy0t8w3ov-{0}-0j3bgjxly4-0j3bgjxly4.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\x9m2x7cu2v-{0}-47otxtyo56-47otxtyo56.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\ub2grv2w9h-{0}-4v8eqarkd7-4v8eqarkd7.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\e289loc8pj-{0}-356vix0kms-356vix0kms.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\eu5shd8amn-{0}-83jwlth58m-83jwlth58m.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\hgsdub3o4e-{0}-mrlpezrjn3-mrlpezrjn3.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\b0011dn4ef-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\v837xqli1q-{0}-ag7o75518u-ag7o75518u.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\al57razxjp-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\180e7vz7t6-{0}-0i3buxo5is-0i3buxo5is.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\ameez9d49l-{0}-o1o13a6vjx-o1o13a6vjx.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\qsxmkxmfa6-{0}-ttgo8qnofa-ttgo8qnofa.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\ea8ipr4mcv-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\cho0829u86-{0}-muycvpuwrr-muycvpuwrr.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\uyebv0p44n-{0}-87fc7y1x7t-87fc7y1x7t.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\cdiix6800a-{0}-mlv21k5csn-mlv21k5csn.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\mpw9ds1axw-{0}-t8p5iydnrz-t8p5iydnrz.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\2d129wpzat-{0}-t8p5iydnrz-t8p5iydnrz.gz
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\staticwebassets.build.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\staticwebassets.build.json.cache
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\staticwebassets.development.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOper.14B84A0D.Up2Date
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\refint\TourOperatorWeb.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.pdb
+C:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.genruntimeconfig.cache
+C:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\ref\TourOperatorWeb.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.Data.Sqlite.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\SQLitePCLRaw.batteries_v2.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\SQLitePCLRaw.core.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\SQLitePCLRaw.provider.e_sqlite3.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-arm\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-arm64\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-armel\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-mips64\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-s390x\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-x64\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-x86\native\libe_sqlite3.so
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\win-arm\native\e_sqlite3.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
+c:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\k4pfkdsbgk-{0}-s7lyku4v19-s7lyku4v19.gz
+C:\Users\Shinji\Documents\backup hoctap\BackEnd\BTL\TourOperatorWeb\obj\Debug\net10.0\compressed\3d3vtu8il4-{0}-gn9nt6i7zs-gn9nt6i7zs.gz
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\appsettings.Development.json
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\appsettings.json
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.staticwebassets.runtime.json
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.staticwebassets.endpoints.json
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.exe
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.deps.json
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.runtimeconfig.json
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\TourOperatorWeb.pdb
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Humanizer.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.Build.Locator.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.Data.Sqlite.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\Mono.TextTemplating.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\SQLitePCLRaw.batteries_v2.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\SQLitePCLRaw.core.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\SQLitePCLRaw.provider.e_sqlite3.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\System.CodeDom.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\System.Composition.Convention.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\System.Composition.Hosting.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\System.Composition.Runtime.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\System.Composition.TypedParts.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-arm\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-arm64\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-armel\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-mips64\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-s390x\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-x64\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\linux-x86\native\libe_sqlite3.so
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\win-arm\native\e_sqlite3.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
+F:\Tour_Operator_System\TourOperatorWeb\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.csproj.AssemblyReference.cache
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\rpswa.dswa.cache.json
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.GeneratedMSBuildEditorConfig.editorconfig
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.AssemblyInfoInputs.cache
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.AssemblyInfo.cs
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.csproj.CoreCompileInputs.cache
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.MvcApplicationPartsAssemblyInfo.cache
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.RazorAssemblyInfo.cache
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.RazorAssemblyInfo.cs
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.sourcelink.json
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\rjimswa.dswa.cache.json
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\scopedcss\bundle\TourOperatorWeb.styles.css
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\scopedcss\projectbundle\TourOperatorWeb.bundle.scp.css
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\3d3vtu8il4-{0}-gn9nt6i7zs-gn9nt6i7zs.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\g3svoafy3v-{0}-61n19gt1b8-61n19gt1b8.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\k4pfkdsbgk-{0}-s7lyku4v19-s7lyku4v19.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\9grurhrju4-{0}-t1cqhe9u97-t1cqhe9u97.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\tk3dehodsb-{0}-c2jlpeoesf-c2jlpeoesf.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\pkwqyzeioa-{0}-sejl45xvog-sejl45xvog.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\hdmcclgcei-{0}-aexeepp0ev-aexeepp0ev.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\o7auwhl2ad-{0}-xvp3kq03qx-xvp3kq03qx.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\3iqs7bxibm-{0}-ausgxo2sd3-ausgxo2sd3.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\k00jpfhdx8-{0}-22vffe00uq-22vffe00uq.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\s8b2h09wwx-{0}-cosvhxvwiu-cosvhxvwiu.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\ordu4usojj-{0}-qesaa3a1fm-qesaa3a1fm.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\bulfk3g8z1-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\17noghae6q-{0}-tmc1g35s3z-tmc1g35s3z.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\8jil6q4xsb-{0}-fsbi9cje9m-fsbi9cje9m.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\k0rmnga10c-{0}-rxsg74s51o-rxsg74s51o.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\70507x4ns5-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\ytn8u7apmn-{0}-q9ht133ko3-q9ht133ko3.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\beh78vced9-{0}-jd9uben2k1-jd9uben2k1.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\11rvqzztre-{0}-gye83jo8yx-gye83jo8yx.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\69bpw5dwzs-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\xn6z1a6dem-{0}-wl58j5mj3v-wl58j5mj3v.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\fu6kxkhlvo-{0}-c2oey78nd0-c2oey78nd0.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\5ae110eiyj-{0}-d4r6k3f320-d4r6k3f320.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\sedxfjq02y-{0}-j5mq2jizvt-j5mq2jizvt.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\3qdgzn5yj4-{0}-keugtjm085-keugtjm085.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\1kndqaohok-{0}-nvvlpmu67g-nvvlpmu67g.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\w9o86x6fcj-{0}-zub09dkrxp-zub09dkrxp.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\1fefrn41xs-{0}-pj5nd1wqec-pj5nd1wqec.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\tu8ge1wwlw-{0}-43atpzeawx-43atpzeawx.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\qsio25pt1j-{0}-v0zj4ognzu-v0zj4ognzu.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\coizkiiki2-{0}-ynyaa8k90p-ynyaa8k90p.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\1n10am6a3p-{0}-hrwsygsryq-hrwsygsryq.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\h6ojlvjjj9-{0}-c63t5i9ira-c63t5i9ira.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\hqmydcdryd-{0}-ft3s53vfgj-ft3s53vfgj.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\aygd1cdqwa-{0}-4094rpi4f9-4094rpi4f9.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\vdc065d227-{0}-6pdc2jztkx-6pdc2jztkx.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\euog3ocqdf-{0}-hd3gran6i8-hd3gran6i8.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\gf892sljmd-{0}-iovd86k7lj-iovd86k7lj.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\w7duvrzvnq-{0}-ltid2c489k-ltid2c489k.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\sbjwynn5jc-{0}-kbrnm935zg-kbrnm935zg.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\107olorqbx-{0}-8vyfqsqgz1-8vyfqsqgz1.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\b47djlimqm-{0}-y7v9cxd14o-y7v9cxd14o.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\xqonidcpvs-{0}-u9q1upor1n-u9q1upor1n.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\7ojxfikqtk-{0}-h1s4sie4z3-h1s4sie4z3.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\e9bm0spfl0-{0}-4d85u1mtcx-4d85u1mtcx.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\biy0t8w3ov-{0}-0j3bgjxly4-0j3bgjxly4.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\x9m2x7cu2v-{0}-03hjc8e09r-03hjc8e09r.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\ub2grv2w9h-{0}-48y08845bh-48y08845bh.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\e289loc8pj-{0}-356vix0kms-356vix0kms.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\eu5shd8amn-{0}-83jwlth58m-83jwlth58m.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\hgsdub3o4e-{0}-mrlpezrjn3-mrlpezrjn3.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\b0011dn4ef-{0}-worgj0nhwm-worgj0nhwm.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\v837xqli1q-{0}-gk0pw8i4co-gk0pw8i4co.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\al57razxjp-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\180e7vz7t6-{0}-d6nrnj6jjx-d6nrnj6jjx.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\ameez9d49l-{0}-m9qm4tazc0-m9qm4tazc0.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\qsxmkxmfa6-{0}-ttgo8qnofa-ttgo8qnofa.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\ea8ipr4mcv-{0}-jjsuc0puko-jjsuc0puko.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\cho0829u86-{0}-9vr69e8ynj-9vr69e8ynj.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\uyebv0p44n-{0}-87fc7y1x7t-87fc7y1x7t.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\cdiix6800a-{0}-mlv21k5csn-mlv21k5csn.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\mpw9ds1axw-{0}-t8p5iydnrz-t8p5iydnrz.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\compressed\2d129wpzat-{0}-t8p5iydnrz-t8p5iydnrz.gz
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\staticwebassets.build.json
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\staticwebassets.build.json.cache
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\staticwebassets.development.json
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\swae.build.ex.cache
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOper.14B84A0D.Up2Date
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.dll
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\refint\TourOperatorWeb.dll
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.pdb
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\TourOperatorWeb.genruntimeconfig.cache
+F:\Tour_Operator_System\TourOperatorWeb\obj\Debug\net10.0\ref\TourOperatorWeb.dll

@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shinji\\Documents\\backup hoctap\\BackEnd\\BTL\\TourOperator\\TourOperator.csproj": {}
+    "F:\\Tour_Operator_System\\TourOperator\\TourOperator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shinji\\Documents\\backup hoctap\\BackEnd\\BTL\\TourOperator\\TourOperator.csproj": {
+    "F:\\Tour_Operator_System\\TourOperator\\TourOperator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shinji\\Documents\\backup hoctap\\BackEnd\\BTL\\TourOperator\\TourOperator.csproj",
+        "projectUniqueName": "F:\\Tour_Operator_System\\TourOperator\\TourOperator.csproj",
         "projectName": "TourOperator",
-        "projectPath": "C:\\Users\\Shinji\\Documents\\backup hoctap\\BackEnd\\BTL\\TourOperator\\TourOperator.csproj",
-        "packagesPath": "C:\\Users\\Shinji\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shinji\\Documents\\backup hoctap\\BackEnd\\BTL\\TourOperator\\obj\\",
+        "projectPath": "F:\\Tour_Operator_System\\TourOperator\\TourOperator.csproj",
+        "packagesPath": "C:\\Users\\HoangPham\\.nuget\\packages\\",
+        "outputPath": "F:\\Tour_Operator_System\\TourOperator\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Shinji\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HoangPham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

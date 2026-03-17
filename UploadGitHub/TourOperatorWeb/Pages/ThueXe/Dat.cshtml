@@ -1,0 +1,61 @@
+@page "{id:int}"
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+@model TourOperatorWeb.Pages.ThueXe.DatModel
+@{
+    ViewData["Title"] = "Thuê xe riêng";
+}
+
+<div class="container py-4">
+    @if (Model.Xe == null)
+    {
+        <div class="alert alert-warning small">Không tìm thấy thông tin xe.</div>
+        <a asp-page="/ThueXe/Index" class="btn btn-outline-secondary btn-sm">Quay lại danh sách xe</a>
+    }
+    else
+    {
+        <h1 class="mb-1">Thuê xe riêng</h1>
+        <p class="text-muted small mb-3">Xe: <strong>@(Model.Xe.LoaiXe ?? Model.Xe.BienSo)</strong> (@Model.Xe.BienSo)</p>
+
+        @if (!string.IsNullOrEmpty(Model.ThongBao))
+        {
+            <div class="alert alert-success small">@Model.ThongBao</div>
+        }
+
+        <form method="post">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label asp-for="Input.NgayThue" class="form-label">Ngày thuê</label>
+                    <input asp-for="Input.NgayThue" class="form-control form-control-sm" type="date" />
+                    <span asp-validation-for="Input.NgayThue" class="text-danger small"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Input.SoNgay" class="form-label">Số ngày</label>
+                    <input asp-for="Input.SoNgay" class="form-control form-control-sm" type="number" min="1" />
+                    <span asp-validation-for="Input.SoNgay" class="text-danger small"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Input.DiemDon" class="form-label">Điểm đón</label>
+                    <input asp-for="Input.DiemDon" class="form-control form-control-sm" />
+                    <span asp-validation-for="Input.DiemDon" class="text-danger small"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Input.DiemTra" class="form-label">Điểm trả</label>
+                    <input asp-for="Input.DiemTra" class="form-control form-control-sm" />
+                    <span asp-validation-for="Input.DiemTra" class="text-danger small"></span>
+                </div>
+                <div class="col-12">
+                    <label asp-for="Input.GhiChu" class="form-label">Ghi chú thêm (tuỳ chọn)</label>
+                    <textarea asp-for="Input.GhiChu" class="form-control form-control-sm" rows="2" placeholder="Giờ đón dự kiến, hành trình sơ bộ, yêu cầu thêm..."></textarea>
+                    <span asp-validation-for="Input.GhiChu" class="text-danger small"></span>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+                <button type="submit" class="btn btn-primary btn-sm">Gửi yêu cầu thuê xe</button>
+                <a asp-page="/ThueXe/Index" class="btn btn-outline-secondary btn-sm">Quay lại danh sách xe</a>
+            </div>
+            <p class="text-muted small mt-2 mb-0">
+                Yêu cầu thuê xe sẽ được ghi nhận trong hệ thống, VietTour sẽ liên hệ xác nhận chi tiết trong bước triển khai thực tế.
+            </p>
+        </form>
+    }
+</div>

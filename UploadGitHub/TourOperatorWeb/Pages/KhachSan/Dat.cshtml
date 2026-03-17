@@ -1,0 +1,61 @@
+@page "{id:int}"
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+@model TourOperatorWeb.Pages.KhachSanPages.DatModel
+@{
+    ViewData["Title"] = "Đặt khách sạn";
+}
+
+<div class="container py-4">
+    @if (Model.KhachSan == null)
+    {
+        <div class="alert alert-warning small">Không tìm thấy thông tin khách sạn.</div>
+        <a asp-page="/KhachSan/Index" class="btn btn-outline-secondary btn-sm">Quay lại danh sách khách sạn</a>
+    }
+    else
+    {
+        <h1 class="mb-1">Đặt khách sạn</h1>
+        <p class="text-muted small mb-3">Khách sạn: <strong>@Model.KhachSan.TenKhachSan</strong></p>
+
+        @if (!string.IsNullOrEmpty(Model.ThongBao))
+        {
+            <div class="alert alert-success small">@Model.ThongBao</div>
+        }
+
+        <form method="post">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label asp-for="Input.NgayNhanPhong" class="form-label">Ngày nhận phòng</label>
+                    <input asp-for="Input.NgayNhanPhong" class="form-control form-control-sm" type="date" />
+                    <span asp-validation-for="Input.NgayNhanPhong" class="text-danger small"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Input.NgayTraPhong" class="form-label">Ngày trả phòng</label>
+                    <input asp-for="Input.NgayTraPhong" class="form-control form-control-sm" type="date" />
+                    <span asp-validation-for="Input.NgayTraPhong" class="text-danger small"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Input.SoPhong" class="form-label">Số phòng</label>
+                    <input asp-for="Input.SoPhong" class="form-control form-control-sm" type="number" min="1" />
+                    <span asp-validation-for="Input.SoPhong" class="text-danger small"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Input.SoKhach" class="form-label">Số khách</label>
+                    <input asp-for="Input.SoKhach" class="form-control form-control-sm" type="number" min="1" />
+                    <span asp-validation-for="Input.SoKhach" class="text-danger small"></span>
+                </div>
+                <div class="col-12">
+                    <label asp-for="Input.GhiChu" class="form-label">Ghi chú thêm (tuỳ chọn)</label>
+                    <textarea asp-for="Input.GhiChu" class="form-control form-control-sm" rows="2" placeholder="Yêu cầu giường đôi/giường đơn, trẻ em đi cùng, giờ nhận phòng dự kiến..."></textarea>
+                    <span asp-validation-for="Input.GhiChu" class="text-danger small"></span>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+                <button type="submit" class="btn btn-primary btn-sm">Gửi yêu cầu đặt phòng</button>
+                <a asp-page="/KhachSan/Index" class="btn btn-outline-secondary btn-sm">Quay lại danh sách khách sạn</a>
+            </div>
+            <p class="text-muted small mt-2 mb-0">
+                Yêu cầu đặt phòng sẽ được ghi nhận trong hệ thống, VietTour sẽ liên hệ xác nhận chi tiết trong bước triển khai thực tế.
+            </p>
+        </form>
+    }
+</div>

@@ -1,0 +1,307 @@
+@page
+@model TourOperatorWeb.Pages.TaiKhoan.ThongTinModel
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+@{
+    ViewData["Title"] = "Thông tin tài khoản";
+}
+
+<div class="container py-4 account-page">
+    <h1 class="mb-1">Thông tin tài khoản</h1>
+    <p class="account-page-subtitle small mb-3">Quản lý hồ sơ cá nhân, chuyến đi và thanh toán của bạn.</p>
+
+    @if (Model.NguoiDungHienTai == null)
+    {
+        <div class="alert alert-warning">
+            Không tìm thấy thông tin tài khoản. Vui lòng đăng xuất và đăng nhập lại.
+        </div>
+    }
+    else
+    {
+        if (TempData["ThongBaoTaiKhoan"] is string thongBao && !string.IsNullOrWhiteSpace(thongBao))
+        {
+            <div class="alert alert-info alert-dismissible fade show small" role="alert">
+                @thongBao
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        <div class="row g-4">
+            <!-- 1. Thong tin ca nhan co ban (Profile) -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h2 class="h6 mb-3">Thông tin cá nhân</h2>
+                        <dl class="row small mb-0">
+                            <dt class="col-sm-5">Họ và tên</dt>
+                            <dd class="col-sm-7">@(Model.NguoiDungHienTai.HoTen ?? "Chưa cập nhật")</dd>
+
+                            <dt class="col-sm-5">Số điện thoại</dt>
+                            <dd class="col-sm-7">@(Model.NguoiDungHienTai.SoDienThoai ?? "Chưa cập nhật")</dd>
+
+                            <dt class="col-sm-5">Email</dt>
+                            <dd class="col-sm-7">@(Model.NguoiDungHienTai.Email ?? "Chưa cập nhật")</dd>
+
+                            <dt class="col-sm-5">Giấy tờ</dt>
+                            <dd class="col-sm-7">
+                                @if (!string.IsNullOrWhiteSpace(Model.NguoiDungHienTai.SoGiayTo))
+                                {
+                                    <span>@(Model.NguoiDungHienTai.LoaiGiayTo ?? "Giấy tờ") - @Model.NguoiDungHienTai.SoGiayTo</span>
+                                }
+                                else
+                                {
+                                    <span>Chưa cập nhật</span>
+                                }
+                            </dd>
+
+                            <dt class="col-sm-5">Tên đăng nhập</dt>
+                            <dd class="col-sm-7">@Model.NguoiDungHienTai.TenDangNhap</dd>
+
+                            <dt class="col-sm-5">Vai trò</dt>
+                            <dd class="col-sm-7">@Model.NguoiDungHienTai.VaiTro?.TenVaiTro</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2–6. Tabs quan ly chuyen di, thanh toan, yeu cau, yeu thich, cai dat -->
+            <div class="col-lg-8">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs small mb-3 account-tabs" id="accountTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="bookings-tab" data-bs-toggle="tab" data-bs-target="#bookings" type="button" role="tab">
+                                    <i class="bi bi-suitcase-lg me-1"></i>Chuyến đi & đặt chỗ
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="payments-tab" data-bs-toggle="tab" data-bs-target="#payments" type="button" role="tab">
+                                    <i class="bi bi-credit-card me-1"></i>Thanh toán & công nợ
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="custom-tab" data-bs-toggle="tab" data-bs-target="#custom" type="button" role="tab">
+                                    <i class="bi bi-pencil-square me-1"></i>Yêu cầu tour riêng
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="wishlist-tab" data-bs-toggle="tab" data-bs-target="#wishlist" type="button" role="tab">
+                                    <i class="bi bi-heart me-1"></i>Yêu thích
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab">
+                                    <i class="bi bi-gear me-1"></i>Cài đặt tài khoản
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content small" id="accountTabsContent">
+                            <!-- 2. Quan ly Chuyen di & Dat cho (My Bookings) -->
+                            <div class="tab-pane fade show active" id="bookings" role="tabpanel" aria-labelledby="bookings-tab">
+                                @if (Model.LichSuDatTour == null || !Model.LichSuDatTour.Any())
+                                {
+                                    <p class="text-muted mb-0">Chưa có lượt đặt tour nào được ghi nhận.</p>
+                                }
+                                else
+                                {
+                                    <h3 class="h6 mb-2">Tour sắp đi</h3>
+                                    @if (!Model.TourSapDi.Any())
+                                    {
+                                        <p class="text-muted small">Hiện chưa có tour sắp khởi hành.</p>
+                                    }
+                                    else
+                                    {
+                                        <div class="table-responsive mb-3">
+                                            <table class="table table-sm align-middle mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tour</th>
+                                                        <th>Ngày khởi hành</th>
+                                                        <th>Đếm ngược</th>
+                                                        <th class="text-end">Số khách</th>
+                                                        <th class="text-end">Hành động</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var dat in Model.TourSapDi)
+                                                    {
+                                                        var days = (dat.NgayKhoiHanh.Date - DateTime.Today).Days;
+                                                        string label = days switch
+                                                        {
+                                                            0 => "Khởi hành hôm nay",
+                                                            < 0 => "Đã khởi hành",
+                                                            _ => $"Còn {days} ngày"
+                                                        };
+                                                        <tr>
+                                                            <td>
+                                                                @if (dat.TourDuLich != null)
+                                                                {
+                                                                    <a asp-page="/Tour/ChiTiet" asp-route-id="@dat.TourDuLichId">@dat.TourDuLich.TenTour</a>
+                                                                }
+                                                                else
+                                                                {
+                                                                    @($"Tour #{dat.TourDuLichId}")
+                                                                }
+                                                            </td>
+                                                            <td>@dat.NgayKhoiHanh.ToString("dd/MM/yyyy")</td>
+                                                            <td>@label</td>
+                                                            <td class="text-end">@(dat.SoNguoiLon + dat.SoTreEm)</td>
+                                                            <td class="text-end">
+                                                                <form method="post" asp-page-handler="Huy" asp-route-id="@dat.Id" class="d-inline">
+                                                                    <button type="submit" class="btn btn-outline-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn hủy tour này?');">
+                                                                        Hủy tour
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p class="text-muted small mt-2 mb-0">
+                                            Bạn chỉ có thể hủy tour trước ngày khởi hành. Khi triển khai thật, hệ thống sẽ áp dụng chính sách hủy và hoàn tiền chi tiết.
+                                        </p>
+                                    }
+
+                                    <h3 class="h6 mb-2 mt-3">Tour đã đi / Đã hủy</h3>
+                                    @if (!Model.TourDaDiHoacHuy.Any())
+                                    {
+                                        <p class="text-muted small">Chưa có tour đã hoàn thành.</p>
+                                    }
+                                    else
+                                    {
+                                        <div class="table-responsive">
+                                            <table class="table table-sm align-middle mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tour</th>
+                                                        <th>Ngày khởi hành</th>
+                                                        <th>Trạng thái</th>
+                                                        <th class="text-end">Số khách</th>
+                                                        <th class="text-end">Đánh giá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var dat in Model.TourDaDiHoacHuy)
+                                                    {
+                                                        <tr>
+                                                            <td>
+                                                                @if (dat.TourDuLich != null)
+                                                                {
+                                                                    <a asp-page="/Tour/ChiTiet" asp-route-id="@dat.TourDuLichId">@dat.TourDuLich.TenTour</a>
+                                                                }
+                                                                else
+                                                                {
+                                                                    @($"Tour #{dat.TourDuLichId}")
+                                                                }
+                                                            </td>
+                                                            <td>@dat.NgayKhoiHanh.ToString("dd/MM/yyyy")</td>
+                                                            <td>@(dat.DaHuy ? "Đã hủy" : "Đã đi")</td>
+                                                            <td class="text-end">@(dat.SoNguoiLon + dat.SoTreEm)</td>
+                                                            <td class="text-end">
+                                                                <button class="btn btn-outline-secondary btn-sm" disabled>Viết đánh giá</button>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    }
+                                }
+                            </div>
+
+                            <!-- 3. Quan ly Thanh toan & Cong no (Payments) - demo tu du lieu DatTour -->
+                            <div class="tab-pane fade" id="payments" role="tabpanel" aria-labelledby="payments-tab">
+                                <h3 class="h6 mb-2">Tổng quan thanh toán</h3>
+                                <p class="small mb-2">
+                                    Tổng giá trị các đơn đặt tour: <strong>@Model.TongGiaTriDatTour.ToString("N0") đ</strong>
+                                </p>
+                                <p class="text-muted small mb-3">
+                                    Hệ thống hiện chưa tách riêng tiền đặt cọc và số tiền còn thiếu. Khi kết nối với hệ thống kế toán, các biên lai và hóa đơn sẽ hiển thị tại đây.
+                                </p>
+
+                                @if (Model.LichSuDatTour == null || !Model.LichSuDatTour.Any())
+                                {
+                                    <p class="text-muted small mb-0">Chưa có giao dịch nào.</p>
+                                }
+                                else
+                                {
+                                    <div class="table-responsive">
+                                        <table class="table table-sm align-middle mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Ngày đặt</th>
+                                                    <th>Tour</th>
+                                                    <th class="text-end">Thành tiền</th>
+                                                    <th class="text-end">Trạng thái thanh toán</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var dat in Model.LichSuDatTour)
+                                                {
+                                                    <tr>
+                                                        <td class="small">@dat.NgayDat.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                                                        <td class="small">
+                                                            @if (dat.TourDuLich != null)
+                                                            {
+                                                                <a asp-page="/Tour/ChiTiet" asp-route-id="@dat.TourDuLichId">@dat.TourDuLich.TenTour</a>
+                                                            }
+                                                            else
+                                                            {
+                                                                @($"Tour #{dat.TourDuLichId}")
+                                                            }
+                                                        </td>
+                                                        <td class="small text-end">@dat.TongTien.ToString("N0") đ</td>
+                                                        <td class="small text-end">@(dat.DaHuy ? "Đã hủy" : "Chưa đối soát")</td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                }
+                            </div>
+
+                            <!-- 4. Theo doi Yeu cau Tour rieng (Custom Requests) - demo -->
+                            <div class="tab-pane fade" id="custom" role="tabpanel" aria-labelledby="custom-tab">
+                                <h3 class="h6 mb-2">Yêu cầu tour riêng</h3>
+                                <p class="text-muted small mb-2">
+                                    Các yêu cầu từ form "Tự thiết kế tour" hoặc "Thuê xe riêng" sẽ được liệt kê ở đây với trạng thái xử lý.
+                                </p>
+                                <p class="text-muted small mb-0">Hiện chưa lưu lịch sử yêu cầu tour riêng trong hệ thống.</p>
+                            </div>
+
+                            <!-- 5. Danh sach Yeu thich (Wishlist) - demo -->
+                            <div class="tab-pane fade" id="wishlist" role="tabpanel" aria-labelledby="wishlist-tab">
+                                <h3 class="h6 mb-2">Danh sách yêu thích</h3>
+                                <p class="text-muted small mb-0">
+                                    Bạn có thể lưu lại các tour hoặc điểm đến yêu thích để xem lại sau. Tính năng này chưa được kích hoạt trong phiên bản hiện tại.
+                                </p>
+                            </div>
+
+                            <!-- 6. Cai dat tai khoan (Settings) - demo -->
+                            <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                                <h3 class="h6 mb-2">Cài đặt tài khoản</h3>
+                                <div class="mb-3">
+                                    <label class="form-label small">Đổi mật khẩu</label><br />
+                                    <button class="btn btn-outline-secondary btn-sm" disabled>Đổi mật khẩu</button>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label small">Nhận thông báo</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" disabled @(Model.NguoiDungHienTai.NhanThongBaoEmail ? "checked" : "") />
+                                        <label class="form-check-label small">Qua Email khi có thay đổi lịch trình hoặc nhắc thanh toán</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" disabled @(Model.NguoiDungHienTai.NhanThongBaoSms ? "checked" : "") />
+                                        <label class="form-check-label small">Qua SMS</label>
+                                    </div>
+                                </div>
+                                <p class="text-muted small mb-0">Các tùy chọn trên hiện ở chế độ xem. Khi triển khai hệ thống hoàn chỉnh, khách có thể thay đổi trực tiếp tại đây.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

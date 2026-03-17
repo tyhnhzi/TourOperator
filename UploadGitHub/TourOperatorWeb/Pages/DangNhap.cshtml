@@ -1,0 +1,50 @@
+@page
+@model TourOperatorWeb.Pages.DangNhapModel
+@{
+    ViewData["Title"] = "Đăng nhập";
+}
+
+<div class="container py-5 auth-page">
+    <div class="row justify-content-center">
+        <div class="col-md-7 col-lg-5">
+            <div class="card auth-card border-0">
+                <div class="card-header auth-card-header text-center">
+                    <h4 class="mb-1"><i class="bi bi-person-check me-2"></i>Đăng nhập VietTour</h4>
+                    <p class="small mb-0 auth-page-tagline">Truy cập trang quản trị hoặc khu vực khách hàng của bạn.</p>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted small mb-3">
+                        Hệ thống hiện hỗ trợ 2 loại tài khoản:
+                        <br />- <strong>Quản trị hệ thống</strong> (admin)
+                        <br />- <strong>Khách hàng</strong> (khach)
+                    </p>
+                    <form method="post">
+                        <div class="mb-3">
+                            <label asp-for="TenDangNhap" class="form-label">Tên đăng nhập</label>
+                            <input asp-for="TenDangNhap" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="MatKhau" class="form-label">Mật khẩu</label>
+                            <input asp-for="MatKhau" type="password" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="VaiTroId" class="form-label">Chọn loại tài khoản</label>
+                            <select asp-for="VaiTroId" asp-items="Model.DanhSachVaiTro" class="form-select">
+                                <option value="">-- Chọn vai trò --</option>
+                            </select>
+                        </div>
+                        @if (!string.IsNullOrEmpty(Model.ThongBaoLoi))
+                        {
+                            <div class="alert alert-danger small" role="alert">
+                                @Model.ThongBaoLoi
+                            </div>
+                        }
+                        <div class="d-grid mt-2">
+                            <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

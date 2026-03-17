@@ -1,0 +1,39 @@
+@page
+@model TourOperatorWeb.Pages.TinTuc.IndexModel
+@{
+    ViewData["Title"] = "Tin tức & khuyến mãi";
+}
+
+<div class="container py-4">
+    <h1 class="mb-1">Tin tức & khuyến mãi</h1>
+    <p class="text-muted mb-3 small">Một số bản tin và chương trình ưu đãi cho hệ thống VietTour.</p>
+
+    @if (Model.DanhSachTin == null || !Model.DanhSachTin.Any())
+    {
+        <div class="alert alert-info small">Hiện chưa có bản tin nào.</div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+            @foreach (var tin in Model.DanhSachTin)
+            {
+                <div class="col">
+                    <div class="card shadow-sm h-100 border-0 admin-card-hover">
+                        <div class="card-body">
+                            <span class="badge bg-light text-dark small mb-2">@tin.NgayDang.ToString("dd/MM/yyyy")</span>
+                            <h2 class="h6 mb-1">@tin.TieuDe</h2>
+                            <p class="text-muted small mb-2">@tin.MoTaNgan</p>
+                            @if (!string.IsNullOrWhiteSpace(tin.LienKetTour))
+                            {
+                                <a asp-page="/Tour/ChiTiet" asp-route-id="@tin.TourId" class="small">
+                                    Xem tour liên quan
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
